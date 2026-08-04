@@ -133,73 +133,6 @@
         </div>
     </section>
 
-    <!-- Démo Paiement Section -->
-    <section class="payment-demo" id="demo-paiement">
-        <div class="container">
-            <h2 class="section-title">Démo de Paiement Mobile Money</h2>
-            <p class="section-subtitle">Testez vous-même comment vos clients paieront sur votre site</p>
-            
-            <div class="demo-container">
-                <div class="demo-info">
-                    <h3>Essayez maintenant !</h3>
-                    <p>Remplissez ce formulaire pour voir comment fonctionne le paiement Mobile Money sur un site web.</p>
-                    <ul>
-                        <li>✅ Choisissez votre opérateur (M-Pesa, Orange Money, Airtel Money)</li>
-                        <li>✅ Entrez votre numéro</li>
-                        <li>✅ Validez le paiement</li>
-                        <li>✅ Recevez une confirmation instantanée</li>
-                    </ul>
-                </div>
-
-                <form class="payment-form" id="paymentForm">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" placeholder="Votre nom" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Numéro de téléphone</label>
-                        <input type="tel" id="phone" placeholder="+243 99 999 99 99" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="amount">Montant à payer (USD)</label>
-                        <input type="number" id="amount" placeholder="10" min="1" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Moyen de paiement</label>
-                        <div class="payment-options">
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="mpesa" checked>
-                                <span class="operator-badge mpesa">M-Pesa</span>
-                            </label>
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="orange">
-                                <span class="operator-badge orange">Orange Money</span>
-                            </label>
-                            <label class="payment-option">
-                                <input type="radio" name="payment" value="airtel">
-                                <span class="operator-badge airtel">Airtel Money</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-full">Payer maintenant</button>
-                </form>
-
-                <div class="payment-result" id="paymentResult" style="display: none;">
-                    <div class="success-icon">✓</div>
-                    <h3>Paiement réussi !</h3>
-                    <p id="resultMessage"></p>
-                    <button class="btn btn-outline" onclick="resetForm()">Nouveau paiement</button>
-                </div>
-            </div>
-
-            <p class="demo-note">⚠️ Ceci est une démonstration. Aucun argent réel n'est transféré.</p>
-        </div>
-    </section>
-
     <!-- Paiement Section -->
     <section class="payment">
         <div class="container">
@@ -211,79 +144,6 @@
                 <div class="payment-badge">Airtel Money</div>
                 <div class="payment-badge">MaxiCash</div>
                 <div class="payment-badge">CinetPay</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Maintenance Section -->
-    <section class="maintenance">
-        <div class="container">
-            <h2 class="section-title">Maintenance & Support</h2>
-            <p class="section-subtitle">Votre site reste toujours à jour et sécurisé</p>
-            
-            <div class="maintenance-card">
-                <div class="maintenance-badge">3 mois offerts !</div>
-                <h3>Forfait Maintenance</h3>
-                <div class="maintenance-price">50$<span>/mois</span></div>
-                <p class="maintenance-description">Après les 3 mois gratuits, continuez avec le forfait maintenance pour être tranquille.</p>
-                <ul class="maintenance-features">
-                    <li>✓ Mises à jour de sécurité</li>
-                    <li>✓ Corrections de bugs</li>
-                    <li>✓ 2 modifications/mois (texte, photo, prix)</li>
-                    <li>✓ Support WhatsApp prioritaire</li>
-                    <li>✓ Surveillance du site</li>
-                </ul>
-                <a href="https://wa.me/243962624691?text=Je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20forfait%20maintenance%20%C3%A0%2050$" class="btn btn-outline" target="_blank">En savoir plus</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2 class="section-title">Questions Fréquentes</h2>
-            <p class="section-subtitle">Tout ce que vous devez savoir</p>
-            
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <h3>Combien de temps pour créer mon site ?</h3>
-                    <p>Le Pack Vendeur est livré en 24-48h. Le Pack Pro en 3-5 jours. Le Pack Boutique en 7-10 jours selon la complexité.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Dois-je payer l'hébergement ?</h3>
-                    <p>Non ! L'hébergement est inclus dans tous les packs. Vous n'avez rien à payer en plus.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Le paiement Mobile Money est-il sécurisé ?</h3>
-                    <p>Oui ! J'utilise les API officielles de MaxiCash et CinetPay. Vos clients paient comme sur les grandes plateformes, en toute sécurité.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Que se passe-t-il après les 3 mois de maintenance gratuite ?</h3>
-                    <p>Rien ! Le site reste à vous. Vous pouvez continuer avec le forfait maintenance à 50$/mois ou arrêter. Sans maintenance, les petites modifications seront facturées à l'heure.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Je ne suis pas technique, puis-je modifier mon site ?</h3>
-                    <p>Oui ! Je vous forme à modifier les textes, prix et photos facilement. Sinon, le forfait maintenance inclut 2 modifications par mois.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Comment mes clients paient-ils ?</h3>
-                    <p>Ils cliquent sur "Payer", choisissent M-Pesa, Orange Money ou Airtel Money, et valident avec leur PIN. L'argent arrive directement sur votre téléphone.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Proposez-vous un nom de domaine personnalisé ?</h3>
-                    <p>Oui ! Je peux acheter un nom de domaine pour vous (ex: votreboutique.com). Comptez environ 15$/an. Dites-le-moi quand on discute de votre projet.</p>
-                </div>
-
-                <div class="faq-item">
-                    <h3>Comment vous contacter ?</h3>
-                    <p>Le plus simple : WhatsApp au 0962624691. Je réponds généralement en moins de 2 heures.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -306,39 +166,5 @@
             <p class="footer-note">Sites web + Paiement Mobile Money pour l'Afrique</p>
         </div>
     </footer>
-
-    <script>
-        document.getElementById('paymentForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            const amount = document.getElementById('amount').value;
-            const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
-            
-            let operator = '';
-            if (paymentMethod === 'mpesa') operator = 'M-Pesa';
-            else if (paymentMethod === 'orange') operator = 'Orange Money';
-            else if (paymentMethod === 'airtel') operator = 'Airtel Money';
-            
-            // Cacher le formulaire, afficher le résultat
-            document.getElementById('paymentForm').style.display = 'none';
-            document.getElementById('paymentResult').style.display = 'block';
-            
-            // Message de confirmation
-            document.getElementById('resultMessage').innerHTML = `
-                Merci <strong>${name}</strong> !<br>
-                Paiement de <strong>${amount}$</strong> via <strong>${operator}</strong><br>
-                Numéro : <strong>${phone}</strong><br><br>
-                <em>Ceci est une démo. Aucun argent n'a été débité.</em>
-            `;
-        });
-
-        function resetForm() {
-            document.getElementById('paymentForm').reset();
-            document.getElementById('paymentForm').style.display = 'block';
-            document.getElementById('paymentResult').style.display = 'none';
-        }
-    </script>
 </body>
 </html>
